@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 
 public class NewPageScreen extends AbstractScreen {
 
-    @AndroidFindBy(accessibility = "立即注册领1088元红包")
+    @AndroidFindBy(accessibility = "立即注册领108811元红包")
     private AndroidElement appActivityElement;
 
     @Autowired
