@@ -12,20 +12,6 @@ public abstract class AbstractSteps {
     public AppUtils utils;
 
     @Autowired
-    public AppScreen_1 appScreen;
-    @Autowired
-    public HomeScreen_1 homeScreen;
-    @Autowired
-    public ActivityScreen_1 activityScreen;
-    @Autowired
-    public SecureSurfaceScreen_1 secureSurfaceScreen;
-    @Autowired
-    public SecureDialogScreen_1 secureDialogScreen;
-    @Autowired
-    public NotificationScreen_1 notificationScreen;
-    @Autowired
-    public IncomingMessageNotificationScreen_1 incomingMessageNotificationScreen;
-    @Autowired
     public LoginScreen loginScreen;
     @Autowired
     public NewPageScreen newPageScreen;

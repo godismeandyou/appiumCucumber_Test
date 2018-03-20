@@ -7,21 +7,7 @@ import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SecureDialogNavigationStepDefs {
-    @Autowired
-    private HomeScreenSteps_1 homeScreenSteps;
-    @Autowired
-    private AppScreenSteps_1 appScreenSteps;
-    @Autowired
-    private ActivityScreenSteps_1 activityScreenSteps;
-    @Autowired
-    private NotificationSteps_1 notificationSteps;
-    @Autowired
-    private SecureSurfaceSteps_1 secureSurfaceSteps;
-    @Autowired
-    private SecureDialogSteps_1 secureDialogSteps;
-    @Autowired
-    private IncomingMessageNotificationSteps_1 incomingMessageNotificationSteps;
-    @Autowired
+      @Autowired
     private LoginSteps loginSteps;
     @Autowired
     private NewPageSteps newPageSteps;
@@ -33,21 +19,6 @@ public class SecureDialogNavigationStepDefs {
             case "立即注册领1088元红包":
                 newPageSteps.getNewPageScreen();
                 break;
-            case "Activity":
-                appScreenSteps.getActivityScreen();
-                break;
-            case "Secure Surfaces":
-                activityScreenSteps.getSecureSurfaceScreen();
-                break;
-            case "Secure Dialog":
-                secureSurfaceSteps.getSecureDialogScreen();
-                break;
-            case "Notification":
-                appScreenSteps.getNotificationScreen();
-                break;
-            case "IncomingMessage":
-                notificationSteps.getIncomingMessageNotificationScreen();
-                break;
         }
     }
 
@@ -56,13 +27,13 @@ public class SecureDialogNavigationStepDefs {
         // Write code here that turns the phrase above into concrete actions
         switch (textToCheck) {
             case "已有帐号? 登录":
-                Assert.assertTrue(appScreenSteps.checkForActivityScreen());
+//                Assert.assertTrue(appScreenSteps.checkForActivityScreen());
                 break;
             case "Secure Surfaces":
-                Assert.assertTrue(activityScreenSteps.checkForSecureSurfaceScreen());
+//                Assert.assertTrue(activityScreenSteps.checkForSecureSurfaceScreen());
                 break;
             case "Secure Dialog\"":
-                Assert.assertTrue(secureSurfaceSteps.checkForSecureDialog());
+//                Assert.assertTrue(secureSurfaceSteps.checkForSecureDialog());
                 break;
         }
         Thread.sleep(1000);
@@ -73,10 +44,10 @@ public class SecureDialogNavigationStepDefs {
         // Write code here that turns the phrase above into concrete actions
         switch (buttonText) {
             case "Show secure dialog":
-                Assert.assertTrue(secureDialogSteps.checkForSecureDialog());
+//                Assert.assertTrue(secureDialogSteps.checkForSecureDialog());
                 break;
             case "Show App Notification":
-                Assert.assertTrue(incomingMessageNotificationSteps.checkIncomingNotification());
+//                Assert.assertTrue(incomingMessageNotificationSteps.checkIncomingNotification());
         }
 
     }
@@ -86,10 +57,10 @@ public class SecureDialogNavigationStepDefs {
         // Write code here that turns the phrase above into concrete actions
         switch (buttonText) {
             case "Show secure dialog":
-                secureDialogSteps.getSecureDialog();
+//                secureDialogSteps.getSecureDialog();
                 break;
             case "Show App Notification":
-                incomingMessageNotificationSteps.openMessageNotification();
+//                incomingMessageNotificationSteps.openMessageNotification();
                 break;
         }
 
