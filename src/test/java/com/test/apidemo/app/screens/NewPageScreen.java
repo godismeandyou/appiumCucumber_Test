@@ -8,23 +8,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
-@Scope("cucumber-glue")
 /**
  * Created by puhui on 2018-3-19.
  */
-public class LoginScreen extends AbstractScreen {
 
-    @AndroidFindBy(accessibility = "loginButton")
+@Component
+@Scope("cucumber-glue")
+
+public class NewPageScreen extends AbstractScreen {
+
+    @AndroidFindBy(accessibility = "立即注册领1088元红包")
     private AndroidElement appActivityElement;
 
     @Autowired
-    public LoginScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {
+    public NewPageScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {
         super(driver);
         this.appActivityElement = appActivityElement;
     }
 
-    public void clickOnLoginButtonLable(){
+    public void clickOnNewPageButtonLable(){
         appActivityElement.click();
     }
 

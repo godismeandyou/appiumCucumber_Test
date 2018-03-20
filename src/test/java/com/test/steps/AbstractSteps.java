@@ -27,5 +27,7 @@ public abstract class AbstractSteps {
     public IncomingMessageNotificationScreen_1 incomingMessageNotificationScreen;
     @Autowired
     public LoginScreen loginScreen;
+    @Autowired
+    public NewPageScreen newPageScreen;
 
 }

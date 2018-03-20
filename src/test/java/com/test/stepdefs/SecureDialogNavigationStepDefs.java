@@ -23,13 +23,15 @@ public class SecureDialogNavigationStepDefs {
     private IncomingMessageNotificationSteps_1 incomingMessageNotificationSteps;
     @Autowired
     private LoginSteps loginSteps;
+    @Autowired
+    private NewPageSteps newPageSteps;
 
     @When("^I click on \"([^\"]*)\" on \"([^\"]*)\"$")
     public void i_click_on_on(String clickOn, String screenName) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         switch (clickOn) {
-            case "loginButton":
-                loginSteps.getLoginScreen();
+            case "立即注册领1088元红包":
+                newPageSteps.getNewPageScreen();
                 break;
             case "Activity":
                 appScreenSteps.getActivityScreen();
@@ -53,7 +55,7 @@ public class SecureDialogNavigationStepDefs {
     public void text_should_display(String textToCheck) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         switch (textToCheck) {
-            case "Activity":
+            case "已有帐号? 登录":
                 Assert.assertTrue(appScreenSteps.checkForActivityScreen());
                 break;
             case "Secure Surfaces":
