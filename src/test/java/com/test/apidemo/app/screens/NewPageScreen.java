@@ -13,17 +13,17 @@ import org.springframework.stereotype.Component;
 
 public class NewPageScreen extends AbstractScreen {
 
-    @AndroidFindBy(accessibility= "linkpage_start_register")
-    private WebElement appActivityElement;
+    @AndroidFindBy(id = "com.iqianjin.client:id/linkpage_start_register")
+    private WebElement webElement;
 
     @Autowired
     public NewPageScreen(AppiumDriver<? extends MobileElement> driver) {
         super(driver);
     }
 
-    public void clickOnNewPageButtonLable(){
-//        WebElement appActivityElement = driver.findElement(By.id("linkpage_start_register"));
-        appActivityElement.click();
+    public void clickOnNewPageButtonLable() throws InterruptedException {
+        Thread.sleep(3000);
+        webElement.click();
     }
 
 }

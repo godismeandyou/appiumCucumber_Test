@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("cucumber-glue")
 public class NewPageSteps extends AbstractSteps {
-    public void getNewPageScreen(){
+    public void getNewPageScreen() throws InterruptedException {
         newPageScreen.clickOnNewPageButtonLable();
     }
 
