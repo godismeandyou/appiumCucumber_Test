@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SecureDialogNavigationStepDefs {
-      @Autowired
+    @Autowired
     private LoginSteps loginSteps;
     @Autowired
     private NewPageSteps newPageSteps;
@@ -16,7 +16,7 @@ public class SecureDialogNavigationStepDefs {
     public void i_click_on_on(String clickOn, String screenName) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         switch (clickOn) {
-            case "立即注册领1088元红包":
+            case "linkpage_start_register":
                 newPageSteps.getNewPageScreen();
                 break;
         }

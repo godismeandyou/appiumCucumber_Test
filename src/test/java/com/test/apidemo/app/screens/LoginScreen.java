@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class LoginScreen extends AbstractScreen {
 
     @AndroidFindBy(accessibility = "loginButton")
-    private AndroidElement appActivityElement;
+    private AndroidElement appActivityElemexnt;
 
     @Autowired
     public LoginScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {

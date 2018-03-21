@@ -17,9 +17,10 @@ import org.springframework.stereotype.Component;
 
 public class NewPageScreen extends AbstractScreen {
 
-    @AndroidFindBy(accessibility = "立即注册领108811元红包")
+    @AndroidFindBy(accessibility = "linkpage_start_register")
     private AndroidElement appActivityElement;
-   @Autowired
+
+    @Autowired
     public NewPageScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {
         super(driver);
         this.appActivityElement = appActivityElement;
