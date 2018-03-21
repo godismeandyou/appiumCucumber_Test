@@ -17,9 +17,8 @@ public class LoginScreen extends AbstractScreen {
     private AndroidElement appActivityElement;
 
     @Autowired
-    public LoginScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {
+    public LoginScreen(AppiumDriver<? extends MobileElement> driver) {
         super(driver);
-        this.appActivityElement = appActivityElement;
     }
 
     public void clickOnLoginButtonLabile(){
