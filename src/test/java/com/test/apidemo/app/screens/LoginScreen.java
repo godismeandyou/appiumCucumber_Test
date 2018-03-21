@@ -10,13 +10,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("cucumber-glue")
-/**
- * Created by puhui on 2018-3-19.
- */
+
 public class LoginScreen extends AbstractScreen {
 
     @AndroidFindBy(accessibility = "loginButton")
-    private AndroidElement appActivityElemexnt;
+    private AndroidElement appActivityElement;
 
     @Autowired
     public LoginScreen(AppiumDriver<? extends MobileElement> driver, AndroidElement appActivityElement) {
@@ -24,7 +22,7 @@ public class LoginScreen extends AbstractScreen {
         this.appActivityElement = appActivityElement;
     }
 
-    public void clickOnLoginButtonLable(){
+    public void clickOnLoginButtonLabile(){
         appActivityElement.click();
     }
 

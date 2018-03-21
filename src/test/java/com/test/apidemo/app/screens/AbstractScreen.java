@@ -40,6 +40,7 @@ public abstract class AbstractScreen {
 
     }
 
+//  查找控件返回true，否则返回false
     public boolean isElementPresent(By by) {
         try
         {

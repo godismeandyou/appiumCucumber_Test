@@ -7,8 +7,8 @@ import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class SecureDialogNavigationStepDefs {
-    @Autowired
-    private LoginSteps loginSteps;
+//    @Autowired
+//    private LoginSteps loginSteps;
     @Autowired
     private NewPageSteps newPageSteps;
 
